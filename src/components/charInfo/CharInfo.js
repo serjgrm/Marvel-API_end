@@ -48,7 +48,16 @@ const CharInfo = (props) => {
     )
 }
 
+
+
+
+
+
+
+
+
 const View = ({char}) => {
+
     const {name, description, thumbnail, homepage, wiki, comics} = char;
 
     let imgStyle = {'objectFit' : 'cover'};
