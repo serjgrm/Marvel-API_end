@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from "react-helmet";
+import { Helmet,HelmetProvider } from "react-helmet-async";
 
 import './singleComicLayout.scss';
 
@@ -8,6 +8,8 @@ const SingleComicLayout = ({data}) => {
     const {title, description, pageCount, thumbnail, language, price} = data;
 
     return (
+        <HelmetProvider>
+
         <div className="single-comic">
             <Helmet>
                 <meta
@@ -26,6 +28,9 @@ const SingleComicLayout = ({data}) => {
             </div>
             <Link to="/comics" className="single-comic__back">Back to all</Link>
         </div>
+        
+        </HelmetProvider>
+
     )
 }
 

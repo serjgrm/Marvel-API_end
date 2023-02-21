@@ -1,11 +1,11 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ComicsList from "../comicsList/ComicsList";
 import AppBanner from "../appBanner/AppBanner";
 
 const ComicsPage = () => {
     return (
-        <>
+        <HelmetProvider>
             <Helmet>
                 <meta
                     name="description"
@@ -15,7 +15,7 @@ const ComicsPage = () => {
             </Helmet>
             <AppBanner/>
             <ComicsList/>
-        </>
+        </HelmetProvider>
     )
 }
 
