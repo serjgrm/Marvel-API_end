@@ -12,11 +12,11 @@ const RandomChar = () => {
 
     useEffect(() => {
         updateChar();
-        const timerId = setInterval(updateChar, 60000);
-
-        return () => {
-            clearInterval(timerId)
-        }
+        //stopped for maintanance 
+        // const timerId = setInterval(updateChar, 60000);
+        // return () => {
+        //     clearInterval(timerId)
+        // }
         // eslint-disable-next-line
     }, [])
 

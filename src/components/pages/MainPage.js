@@ -34,7 +34,8 @@ const MainPage = () => {
                 <ErrorBoundary>
                     <CharList onCharSelected={onCharSelected}/>
                 </ErrorBoundary>
-                <div>
+
+                <div className="char__form" >
                     <ErrorBoundary>
                         <CharInfo charId={selectedChar}/>
                     </ErrorBoundary>
@@ -42,6 +43,7 @@ const MainPage = () => {
                         <CharSearchForm/>
                     </ErrorBoundary>
                 </div>
+                
             </div>
             <img className="bg-decoration" src={decoration} alt="vision"/>
         </HelmetProvider>
